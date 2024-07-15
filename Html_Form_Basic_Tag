@@ -1,0 +1,147 @@
+<!--Action action="sample.java"give an url pattern in action-->
+<!--Search go to an sample.java-->
+<!--enctype-->
+<!--GET Transfer Limited data and no secure and POST Transfer large dada and it is an Secure -->
+
+<html>
+    <head>
+        <title>
+           HTML Form
+        </title>
+        <script>
+            function showData(){
+                var data=document.getElementById("textpass").value;
+                document.getElementById('p1').innerHTML=data;
+            }
+        </script>
+    </head>
+    <body style="margin: 25%;">
+       <form name="Register Form" method="post" action="#" enctype="multipart/form-data">  <!--GET Transfer Limited data and no secure and POST Transfer large dada and it is an Secure -->
+        <table align="center" cellspacing="20px"  rules="rows" cellpadding="20px">
+            <caption><b>REGISTER FORM</b></caption>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="text" maxlength="8" value="" required oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter your Username')" tabindex="1" title="User Name Field" autocomplete="0ff"></td>
+            </tr>
+            <tr>
+                <td>Roll No</td>
+                <td><input type="text" value="st-1" readonly/>
+                    <input type="text" value="st-1" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="txt" minlength="6" maxlength="10" id="textpass" tabindex="2" onkeypress="showData()"/>
+                <span id="p1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" autofocus placeholder="Enter your Email Id" tabindex="3"> </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" value="male" name="gender">Male
+                <input type="radio" value="Female" name="gender">Female</td>
+            </tr>  
+            <tr>
+                <td>Technology</td>
+                <td>
+                    <input type="checkbox" value="java" name="text">Java
+                    <input type="checkbox" value="Hibernate" name="text">Hibernate
+                    <input type="checkbox" value="Mysql" name="text">Mysql
+                    <input type="checkbox" value="Mysql" name="text">Spring
+                    <input type="checkbox" value="Mysql" name="text">Node Js
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="ctry"> <!--Multiple give select-->
+                        <option>Select</option>
+                        <option value="ind">India</option>
+                        <option value="Uk">United king</option>
+                        <option value="ik">Ireland</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Joining Data</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td>Joining Month</td>
+                <td><input type="month"></td>
+            </tr>
+            <tr>
+                <td>Joining Time</td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td>Choose</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Technology</td>
+                <td>
+                    <input list="t1">
+                    <datalist id="t1">
+                        <option>Java</option>
+                        <option>Java Script</option>
+                        <option>Node js</option>
+                        <option>React js</option>
+                        <option>Hibernate</option>
+                        <option>Spring</option>
+                        <option>Css</option>
+                        <option>Python</option>
+                        <option>Sql</option>
+                        <option>Mysql</option> 
+                        <option>Jdk</option>
+                        <option>Oracle</option>     
+                    </datalist>
+                </td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td><input type="submit" name="sbt"></td>
+            </tr>   
+                                                   
+        </table>
+        <style>
+            table,td,tr{
+                border-collapse:collapse;
+                border: 1px solid black;
+            }
+            body{
+                margin-left: 35%;
+                margin-top:10%;
+                background-color: aliceblue;
+            }
+            caption{
+                margin-bottom: 10px;
+
+            }
+        </style>
+       </form>
+    </body>
+</html>
