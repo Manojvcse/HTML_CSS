@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Css Display</title>
+        <script>
+            function showHeading(){
+                document.getElementById("h1").style.display="block";
+            }
+        </script>
+        <style>
+            h1{
+                display:none;
+            }
+            button{
+                background-color: aqua;
+                color:black;
+
+            }
+            #d1{
+               display:none;
+            }
+            #d2{
+                display: inline;
+                background-color: yellow;
+                height:30px;
+                /*padding:3%*/                
+            }
+            #d3{
+                display: block;
+                background-color: yellow;
+                padding:2%;
+                
+            }
+            #d4{
+                display: inline-block;
+                background-color: yellow;
+                padding:2%;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <button onclick="showHeading()">Click</button>
+        <h1 id="h1">This is Heading</h1>
+        <p id="d3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam velit suscipit ipsam culpa perferendis quam recusandae! Exercitationem tempore nulla perspiciatis quam? Odio maiores delectus illo error dolor vel consequatur! I hope this letter finds you well. I wanted to share with you a project I've been working on recently that's both challenging and exciting: I'm building a robot that walks like a dog. The robot has eight servo motors in total, with each leg equipped with two servos – one for the hip and one for the knee. This setup is intended to mimic the natural movement of a dog's legs, providing a realistic walking motion.
+
+            The journey began with a fascination for robotics and a desire to create something that could move autonomously. Initially, the project seemed straightforward: design a four-legged robot and program it to walk. However, as I delved deeper, I realized the complexities involved in replicating the intricate movements of a living creature.
+            
+            The first step was to design the mechanical structure of the robot. I opted for a quadrupedal design, as it offers stability and mimics the natural gait of a dog. Each leg needed to be both strong and flexible, capable of supporting the robot's weight while also allowing for a range of motions. The hip and knee joints, powered by servo motors, provide the necessary articulation.
+            </p>
+    </body>
+</html>

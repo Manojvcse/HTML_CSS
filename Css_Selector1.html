@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Css Selector</title>
+        <script>
+            function colorChange(){
+                var text=document.getElementById("t1").value;
+                document.getElementById("t1").style.color="red";
+            }
+        </script>
+        <style>
+            input[type="text"]
+            {
+                border-color:red;
+            }
+            input[type="txtemail"]
+            {
+                border-color:red;
+            }
+            input[type="txtpassword"]
+            {
+                border-color:red;
+            }
+            tr:nth-child(even){
+                background-color: rgb(210, 188, 188);
+            }
+            tr:hover{
+                background-color: blue;
+            }
+            table,th,tr,td{
+                border-collapse: collapse;
+                border: 1px solid;
+            }
+         
+        </style>
+    </head>
+    <body>
+        User Name:<input type="text" name="name"><br><br>
+        First Name:<input type="text" name="name"><br><br>
+        Email Id:<input type="txtemail" onkeypress="colorChange()" id="t1"><br><br>
+        Password :<input type="txtpassword"><br><br>
+
+        <table align="center"  cellsapcing="20px" cellpadding="20px" >
+            <tr>
+                <th>Emp</th>
+                <th>Emp Id</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td>def</td>
+                <td>456</td>
+                <td>Seller</td>
+            </tr>
+            <tr>
+                <td>ghi</td>
+                <td>890</td>
+                <td>Buyer</td>
+            </tr>
+            <tr>
+                <td>klm</td>
+                <td>1123</td>
+                <td>Production</td>
+            </tr>
+            <tr>
+                <td>def</td>
+                <td>456</td>
+                <td>Seller</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
